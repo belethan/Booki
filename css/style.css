@@ -48,15 +48,18 @@ nav ul {
 }
 .position {
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
+    height: 50px;
+    flex-direction: row;
 }
-.fa-location-dot{
-    font-size: 26px;
+.position .fa-location-dot{
+    font-size: 20px;
     color:black;
     background-color: rgba(232, 228, 228, 0.851);
     text-align: center;
-    width: 55px;
-    padding: 5px;
+    width: 40px;
+    padding: 13px 5px 5px 5px;
+    border-radius: 15px 0px 0px 15px;
 }
 .fa-money-bill-1-wave, .fa-heart,.fa-person, .fa-fire{
     font-size: 20px;
@@ -64,15 +67,15 @@ nav ul {
     padding: 5px;
 }
 .fa-info   {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
-    border: 2px solid #D3D3D3; /* Bordure gris clair */
-    border-radius: 50%; /* Arrondit le cadre pour qu'il soit circulaire */
-    padding-top: 7px;
-    padding-right: 11px;
-    padding-bottom: 8px;
-    padding-left: 12px;
-    margin-right: 10px;
+    border: 2px solid #D3D3D3;
+    border-radius: 50%;
+    padding-top: 2px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    margin-right: 6px;
 }
 
 /* Conteneur pour le champ de recherche */
@@ -88,21 +91,31 @@ margin: 20px 0px 20px 0px; /*Centrer le conteneur sur la page */
 flex: 1; /* Permet au champ de saisie de prendre tout l'espace disponible */
 border: 1px solid #ccc; /* Bordure grise */
 border-radius: 4px; /* Coins arrondis */
-/*margin-right: 10px; /* Espacement entre le champ de saisie et le bouton */
+text-align: center;
+font-size: 17px;
+}
+/* zone de saisie */
+input::placeholder {
+    text-align: center; /* Centre le texte du placeholder */
+    font-weight: bold;  /* Met le texte du placeholder en gras */
+    color: black;     /* Couleur du texte du placeholder */
 }
 
 /* Bouton de recherche */
 .search-button {
 padding: 10px 15px; /* Espacement interne */
-background-color: #007BFF; /* Couleur du bouton */
+background-color: #0165fc; /* Couleur du bouton */
 color: white; /* Couleur du texte */
 border: none; /* Pas de bordure */
 border-radius: 0 20px 20px 0; /* Coins arrondis à droite */
-
+font-weight: bold; /* Texte en gras */
+font-size: 18px; /* Taille du texte */
 }
 
+
+
 /* Effet de survol du bouton */
-.search-button:hover {
+.button-group .search-button:hover {
 background-color: #0056b3; /* Couleur au survol */
 cursor: pointer;
 }
@@ -111,24 +124,45 @@ cursor: pointer;
 .button-group {
 display: flex; /* Utilise flexbox pour un alignement horizontal */
 justify-content: flex-start; /* Espace entre les boutons */
-align-items: stretch; /* Centrage vertical des éléments */
+align-items: center; /* Centrage vertical des éléments */
 flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur les petits écrans */
 padding: 10px; /* Espacement intérieur */
+font-size: 18px; /* Taille du texte */
+margin-top: 0px;
+padding-top: 10px;
+padding-left: 5px;
 }
 /* Style individuel pour chaque bouton */
-.button {
+.button-group .button {
 color:#333; /* Couleur du texte */
-border-color: #d3d3d3e3;
-background-color: transparent; /* Couleur de fond */
-border: 1px solid; /* Pas de bordure */
-border-radius: 25px; /* Coins arrondis */
-padding:1px 10px 1px 10px; /* Espacement intérieur */
-display: flex; /* Utilisation de flexbox pour aligner l'icône et le texte */
-align-items: center; /* Centrer verticalement */
+border: 1px solid;
+border-color: #a7a4a4;
+background-color: transparent;
+border-radius: 25px;
+padding: 1px 10px 1px 10px;
+display: flex;
+align-items: center;
 margin-left: 10px;
 margin-right: 10px;
 font-size: 16px;
+width: 12%;
+height: 46px;
+justify-content: space-evenly;
 }
+.button-group .famille{
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 1px 10px 1px 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 10%;
+    height: 46px;
+    justify-content: space-evenly;
+}
+
 /* Icône à gauche du libellé */
 .button .icon {
 margin-right: 20px; /* Espacement entre l'icône et le texte */
