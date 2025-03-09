@@ -213,6 +213,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     padding: 5px;
+    border-color: gray;
 }
 
 .card img {
@@ -420,18 +421,11 @@ a {
 
 .Activites-title{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.Activites-title{
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 31px;
+    margin-bottom: 30px;
+    padding-left: 24px;
 }
 
 
@@ -441,7 +435,7 @@ a {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .Activites-cards .card {
