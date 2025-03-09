@@ -142,10 +142,10 @@ border-radius: 25px;    /* Coins arrondis */
 padding: 1px 10px 1px 10px; /* Espacement interne */
 display: flex;  /* Flex pour centrage d'icône */
 align-items: center; /* Centrage vertical de l'icône */
-margin-left: 10px; /* Espacement à gauche */
+margin-left: 12px; /* Espacement à gauche */
 margin-right: 10px;     /* Espacement à droite */
 font-size: 16px; /* Taille du texte */
-width: 15%; /* Largeur */
+width: 12%; /* Largeur */
 height: 46px; /* Hauteur */
 justify-content: space-evenly; /* Espacement entre les éléments */
 }
@@ -159,7 +159,7 @@ justify-content: space-evenly; /* Espacement entre les éléments */
     margin-left: 10px;
     margin-right: 10px;
     font-size: 16px;
-    width: 12%; /* Largeur */
+    width: 10%; /* Largeur */
     height: 46px;
     justify-content: space-evenly;
 }
