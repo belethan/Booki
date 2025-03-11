@@ -8,11 +8,12 @@ L’entreprise souhaite développer un site Internet qui permette aux usagers de
 [!important]
 La page n'est pas en mode responsive
 
-[!tip] Vérification de la page et CSS
+[!tip]
+Vérification de la page et CSS
 
-    [Vérification HTML](https://validator.w3.org/#validate_by_upload "cliquez pour aller sur le site")
+[Vérification HTML](https://validator.w3.org/#validate_by_upload "cliquez pour aller sur le site")
 
-    [Vérification CSS](http://jigsaw.w3.org/css-validator/validator.html.fr#validate_by_upload "cliquez pour aller sur le site")
+[Vérification CSS](http://jigsaw.w3.org/css-validator/validator.html.fr#validate_by_upload "cliquez pour aller sur le site")
 
 ## Historique des Modifications
 
