@@ -5,11 +5,10 @@ Developpeur : Ludovic
 
 L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-!!! warning
+[!important]
+La page n'est pas en mode responsive
 
-    La page n'est pas en mode responsive
-
-!!! tip Vérification de la page et CSS
+[!tip] Vérification de la page et CSS
 
     [Vérification HTML](https://validator.w3.org/#validate_by_upload "cliquez pour aller sur le site")
 
