@@ -344,7 +344,7 @@ a {
 }*/
 
 .hebergements-cards img {
-  width: 250px;
+  width: 240px;
   height: 50%;
   border-radius: 20px 20px 0 0;
 }
@@ -596,15 +596,29 @@ footer h3 {
     color: var(--main-color);
     font-size: 16px;
   }
-
-  @media (max-width: 1160px) {
-    .button-group {
-      font-size: 12px; /* Réduire la taille de la police sur écran petit */
-      padding: 5px 10px; /* Ajuster l'espacement intérieur */
-      align-items: flex-start; /* Aligner le texte en haut */
-      flex-direction: row;
-      /*flex-wrap: wrap;*/
-      align-content: center;
-      width: 90%;
-    }  
 }
+@media (max-width: 1380px) {
+  .hebergements-cards .card {
+    height: 217px;
+    width: 167px;
+  }      
+  .hebergements-cards img {
+    width: 165px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+}    
+@media (max-width: 1160px) {
+  .button-group {
+    font-size: 12px; /* Réduire la taille de la police sur écran petit */
+    padding: 5px 10px; /* Ajuster l'espacement intérieur */
+    align-items: flex-start; /* Aligner le texte en haut */
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    align-content: center;
+    width: 90%;
+  }  
+}  
+
+
+
