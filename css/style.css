@@ -26,7 +26,7 @@ ul li a:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
   cursor: pointer;
-  padding-top: 15px;
+  padding-top: 17px;
 }
 .cadre-logo {
   display: flex;
@@ -120,17 +120,31 @@ input::placeholder {
   cursor: pointer; /* Curseur de la souris */
 }
 
+/* Bouton de Filtrage */
+.button {
+flex: 1; /* Permet aux boutons de s'ajuster également dans l'espace disponible */
+margin: 0 15px; /* Espacement entre les boutons */
+padding: 10px 20px; /* Espacement intérieur */
+border: none; /* Pas de bordure par défaut */
+border-radius: 5px; /* Coins arrondis */
+cursor: pointer; /* Curseur en main lors du survol */
+margin-right: 15px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
 /* Conteneur principal pour le groupe de boutons */
 .button-group {
   display: flex; /* Utilise flexbox pour un alignement horizontal */
   justify-content: flex-start; /* Espace entre les boutons */
   align-items: center; /* Centrage vertical des éléments */
-  flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur les petits écrans */
+   /* flex-wrap: wrap;Permet aux boutons de passer à la ligne sur les petits écrans */
   padding: 10px; /* Espacement intérieur */
   font-size: 18px; /* Taille du texte */
   margin-top: 0px; /* Marge en haut */
   padding-top: 10px; /* Espacement en haut */
   padding-left: 5px; /* Espacement à gauche */
+  width: 60%;
 }
 /* Style individuel pour chaque bouton */
 .button-group .button {
@@ -166,21 +180,36 @@ input::placeholder {
 
 /* Icône à gauche du libellé */
 .button .icon {
-  margin-right: 20px; /* Espacement entre l'icône et le texte */
+ /* margin-right: 20px;Espacement entre l'icône et le texte */
   display: flex; /* Flex pour centrage d'icône */
   align-items: center; /* Centrage vertical de l'icône */
 }
 
 /* Effet de survol du bouton */
+/*.button-group :hover {
+  background-color: #deebff;
+  cursor: pointer; /* Couleur au survol 
+}*/
 .button-group :hover {
   background-color: #deebff;
   cursor: pointer; /* Couleur au survol */
 }
 
+.button-group p{
+  pointer-events: none; /*Ignorer les événements de pointeur pour les balises > */
+  font-size: 16px;
+}
+
+.label-button{
+  padding-left: 8px;
+  color: black;
+  font-weight: bold;
+}
 /******** CSS Existant ***********/
 
 .fa-solid {
   color: var(--main-color);
+  font-size: 16px;
 }
 
 body {
@@ -296,6 +325,23 @@ a {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+/*.hebergements-cards .card {
+  flex: 1 1 calc(25% - 20px); /* Prendre 25% de l'espace disponible moins l'espacement /
+  min-width: 200px; /* Largeur minimale pour chaque Card /
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère /
+  background-color: white;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px 20px 0 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}*/
 
 .hebergements-cards img {
   width: 250px;
@@ -525,16 +571,40 @@ footer h3 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }*/
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 1350px) {
-  .button-group .button {
+  .button-group {
     font-size: 14px; /* Réduire la taille de la police sur écran petit */
     padding: 10px 15px; /* Ajuster l'espacement intérieur */
     align-items: flex-start; /* Aligner le texte en haut */
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-content: center;
+    width: 70%;
+
   }
+  .label-button{
+    padding-left: 8px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .fa-solid {
+    color: var(--main-color);
+    font-size: 16px;
+  }
+
+  @media (max-width: 1160px) {
+    .button-group {
+      font-size: 12px; /* Réduire la taille de la police sur écran petit */
+      padding: 5px 10px; /* Ajuster l'espacement intérieur */
+      align-items: flex-start; /* Aligner le texte en haut */
+      flex-direction: row;
+      /*flex-wrap: wrap;*/
+      align-content: center;
+      width: 90%;
+    }  
 }
