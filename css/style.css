@@ -122,15 +122,15 @@ input::placeholder {
 
 /* Bouton de Filtrage */
 .button {
-flex: 1; /* Permet aux boutons de s'ajuster également dans l'espace disponible */
-margin: 0 15px; /* Espacement entre les boutons */
-padding: 10px 20px; /* Espacement intérieur */
-border: none; /* Pas de bordure par défaut */
-border-radius: 5px; /* Coins arrondis */
-cursor: pointer; /* Curseur en main lors du survol */
-margin-right: 15px;
-padding-left: 5px;
-padding-right: 5px;
+  flex: 1; /* Permet aux boutons de s'ajuster également dans l'espace disponible */
+  margin: 0 15px; /* Espacement entre les boutons */
+  padding: 10px 20px; /* Espacement intérieur */
+  border: none; /* Pas de bordure par défaut */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en main lors du survol */
+  margin-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Conteneur principal pour le groupe de boutons */
@@ -138,7 +138,7 @@ padding-right: 5px;
   display: flex; /* Utilise flexbox pour un alignement horizontal */
   justify-content: flex-start; /* Espace entre les boutons */
   align-items: center; /* Centrage vertical des éléments */
-   /* flex-wrap: wrap;Permet aux boutons de passer à la ligne sur les petits écrans */
+  /* flex-wrap: wrap;Permet aux boutons de passer à la ligne sur les petits écrans */
   padding: 10px; /* Espacement intérieur */
   font-size: 18px; /* Taille du texte */
   margin-top: 0px; /* Marge en haut */
@@ -180,7 +180,7 @@ padding-right: 5px;
 
 /* Icône à gauche du libellé */
 .button .icon {
- /* margin-right: 20px;Espacement entre l'icône et le texte */
+  /* margin-right: 20px;Espacement entre l'icône et le texte */
   display: flex; /* Flex pour centrage d'icône */
   align-items: center; /* Centrage vertical de l'icône */
 }
@@ -195,12 +195,12 @@ padding-right: 5px;
   cursor: pointer; /* Couleur au survol */
 }
 
-.button-group p{
+.button-group p {
   pointer-events: none; /*Ignorer les événements de pointeur pour les balises > */
   font-size: 16px;
 }
 
-.label-button{
+.label-button {
   padding-left: 8px;
   color: black;
   font-weight: bold;
@@ -571,7 +571,6 @@ footer h3 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }*/
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -584,31 +583,108 @@ footer h3 {
     /*flex-wrap: wrap;*/
     align-content: center;
     width: 70%;
-
   }
-  .label-button{
+  .label-button {
     padding-left: 8px;
     color: black;
     font-weight: bold;
   }
-
-  .fa-solid {
-    color: var(--main-color);
-    font-size: 16px;
-  }
 }
-@media (max-width: 1380px) {
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+@media (max-width: 1386px) {
   .hebergements-cards .card {
-    height: 217px;
-    width: 167px;
-  }      
+    height: 226px;
+    width: 224px;
+  }
   .hebergements-cards img {
-    width: 165px;
+    width: 225px;
     height: 50%;
     border-radius: 20px 20px 0 0;
   }
-}    
-@media (max-width: 1160px) {
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1336px) {
+  .hebergements-cards .card {
+    height: 217px;
+    width: 214px;
+  }
+  .hebergements-cards img {
+    width: 213px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1329px) {
+  .hebergements-cards .card {
+    height: 226px;
+    width: 215px;
+  }
+  .hebergements-cards img {
+    width: 214px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1270px) {
+  .hebergements-cards .card {
+    height: 226px;
+    width: 197px;
+  }
+  .hebergements-cards img {
+    width: 195px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1187px) {
+  .hebergements-cards .card {
+    height: 226px;
+    width: 177px;
+  }
+  .hebergements-cards img {
+    width: 178px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1094px) {
+  .hebergements-cards .card {
+    height: 226px;
+    width: 165px;
+  }
+  .hebergements-cards img {
+    width: 166px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
+
+@media (max-width: 1270px) {
   .button-group {
     font-size: 12px; /* Réduire la taille de la police sur écran petit */
     padding: 5px 10px; /* Ajuster l'espacement intérieur */
@@ -616,9 +692,9 @@ footer h3 {
     flex-direction: row;
     /*flex-wrap: wrap;*/
     align-content: center;
-    width: 90%;
-  }  
-}  
-
-
-
+    width: 80%;
+  }
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+}
