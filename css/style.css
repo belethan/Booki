@@ -564,7 +564,11 @@ footer h3 {
     align-items: flex-start; /* Aligner le texte en haut */
     flex-direction: row;
     align-content: center;
+<<<<<<< HEAD
     width: 61%;
+=======
+    width: 70%;
+>>>>>>> 2b75ccf (Gestion Menu filtre en 1024)
   }
   .label-button {
     padding-left: 5px;
@@ -577,6 +581,7 @@ footer h3 {
     color: var(--main-color);
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 1270px) {
   .button-group {
@@ -750,12 +755,63 @@ footer h3 {
     height: 214px;
     width: 165px;
   }
+=======
+@media (max-width: 1393px) {
+  .hebergements-cards .card {
+    height: 190px;
+    width: 167px;
+  }      
+>>>>>>> 2b75ccf (Gestion Menu filtre en 1024)
   .hebergements-cards img {
     width: 165px;
     height: 50%;
     border-radius: 20px 20px 0 0;
   }
+<<<<<<< HEAD
 }
+=======
+}    
+@media (max-width: 1160px) {
+  .button-group {
+    font-size: 14px; /* Réduire la taille de la police sur écran petit */
+    padding: 5px 10px; /* Ajuster l'espacement intérieur */
+    align-items: flex-start; /* Aligner le texte en haut */
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    align-content: center;
+    width: 71%;
+  }  
+  .button-group .button {
+    font-size: 13px;
+  }
+  .label-button{
+    padding-left: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .fa-solid {
+    color: var(--main-color);
+    font-size: 12px;
+  }
+
+}  
+@media (max-width: 1045px) {
+  .button-group {
+    width: 71%;
+  }
+  .label-button{
+    padding-left: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .fa-solid {
+    color: var(--main-color);
+    font-size: 12px;
+  }
+}  
+>>>>>>> 2b75ccf (Gestion Menu filtre en 1024)
 
 @media (max-width: 1050px) {
   .hebergements-cards .card {
