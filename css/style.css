@@ -302,6 +302,12 @@ a {
 .marseille {
   width: 65%;
 }
+
+.marseille h3:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+
 .hebergements-title {
   display: flex;
   justify-content: flex-start;
