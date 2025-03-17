@@ -28,6 +28,7 @@ ul li a:hover {
   cursor: pointer;
   padding-top: 6px;
 }
+
 .cadre-logo {
   display: flex;
   flex-direction: row;
@@ -45,6 +46,7 @@ ul li a:hover {
   margin-left: auto;
   justify-content: flex-end;
 }
+
 .position {
   display: flex;
   justify-content: center;
@@ -340,23 +342,6 @@ a {
   margin-right: 5px;
 }
 
-/*.hebergements-cards .card {
-  flex: 1 1 calc(25% - 20px); /* Prendre 25% de l'espace disponible moins l'espacement /
-  min-width: 200px; /* Largeur minimale pour chaque Card /
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère /
-  background-color: white;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  border-radius: 20px 20px 0 0;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 6px;
-  padding-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}*/
-
 .hebergements-cards img {
   width: 240px;
   height: 50%;
@@ -560,39 +545,12 @@ footer h3 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1440px) and (min-width: 1024px) {
-  /*  .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-  .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-   .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }*/
+  /** CSS en Commun sur tous groupes**/
 }
+/********************************/
+/* Gestion Groupe Bouton Filtre */
+/********************************/
 
-/* Small devices (phones, less than 768px) */
 @media (max-width: 1350px) {
   .button-group {
     font-size: 14px; /* Réduire la taille de la police sur écran petit */
@@ -614,6 +572,92 @@ footer h3 {
   }
 }
 
+@media (max-width: 1270px) {
+  .button-group {
+    font-size: 13px; /* Réduire la taille de la police sur écran petit */
+    padding: 8px 13px; /* Ajuster l'espacement intérieur */
+    align-items: flex-start; /* Aligner le texte en haut */
+    flex-direction: row;
+    align-content: center;
+    width: 65%;
+  }
+  .label-button {
+    padding-left: 5px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .button .fa-solid {
+    font-size: 15px;
+    color: var(--main-color);
+  }
+}
+@media (max-width: 1160px) {
+  .button-group {
+    font-size: 15px; /* Réduire la taille de la police sur écran petit */
+    padding: 5px 7px; /* Ajuster l'espacement intérieur */
+    align-items: flex-start; /* Aligner le texte en haut */
+    flex-direction: row;
+    align-content: center;
+    width: 71%;
+  }
+  .button-group .button {
+    font-size: 15px;
+  }
+  .label-button {
+    padding-left: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .button .fa-solid {
+    color: var(--main-color);
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .button-group {
+    font-size: 14px; /* Réduire la taille de la police sur écran petit */
+    padding: 5px 7px; /* Ajuster l'espacement intérieur */
+    align-items: flex-start; /* Aligner le texte en haut */
+    flex-direction: row;
+    align-content: center;
+    width: 71%;
+  }
+  .button-group .button {
+    font-size: 14px;
+  }
+  .label-button {
+    padding-left: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .button .fa-solid {
+    font-size: 13px;
+    color: var(--main-color);
+  }
+}
+
+@media (max-width: 1030px) {
+  .button-group {
+    width: 70%;
+  }
+  .label-button {
+    padding-left: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .button.fa-solid {
+    font-size: 14px;
+    color: var(--main-color);
+  }
+}
+/************************************/
+/********* Hergement Card ***********/
+/************************************/
 @media (max-width: 1400px) {
   .hebergements-cards .card {
     height: 190px;
@@ -640,58 +684,38 @@ footer h3 {
 @media (max-width: 1388px) {
   .hebergements-cards .card {
     height: 195px;
-    width: 220px;
+    width: 210px;
   }
   .hebergements-cards img {
-    width: 214px;
+    width: 210px;
     height: 50%;
     border-radius: 20px 20px 0 0;
   }
 }
 
-@media (max-width: 1270px) {
-  .button-group {
-    font-size: 13px; /* Réduire la taille de la police sur écran petit */
-    padding: 8px 13px; /* Ajuster l'espacement intérieur */
-    align-items: flex-start; /* Aligner le texte en haut */
-    flex-direction: row;
-    align-content: center;
-    width: 65%;
+@media (max-width: 1258px) {
+  .hebergements-cards .card {
+    height: 195px;
+    width: 205px;
   }
-  .label-button {
-    padding-left: 5px;
-    color: black;
-    font-weight: bold;
-  }
-
-  .button .fa-solid {
-    font-size: 15px;
-    color: var(--main-color);
+  .hebergements-cards img {
+    width: 205px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
   }
 }
-
+@media (max-width: 1234px) {
+  .hebergements-cards .card {
+    height: 195px;
+    width: 180px;
+  }
+  .hebergements-cards img {
+    width: 180px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+}
 @media (max-width: 1160px) {
-  .button-group {
-    font-size: 15px; /* Réduire la taille de la police sur écran petit */
-    padding: 5px 7px; /* Ajuster l'espacement intérieur */
-    align-items: flex-start; /* Aligner le texte en haut */
-    flex-direction: row;
-    align-content: center;
-    width: 71%;
-  }
-  .button-group .button {
-    font-size: 15px;
-  }
-  .label-button {
-    padding-left: 6px;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .button .fa-solid {
-    color: var(--main-color);
-    font-size: 15px;
-  }
   .hebergements-cards .card {
     height: 214px;
     width: 180px;
@@ -702,28 +726,20 @@ footer h3 {
     border-radius: 20px 20px 0 0;
   }
 }
+
+@media (max-width: 1120px) {
+  .hebergements-cards .card {
+    height: 195px;
+    width: 170px;
+  }
+  .hebergements-cards img {
+    width: 170px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
 @media (max-width: 1090px) {
-  .button-group {
-    font-size: 14px; /* Réduire la taille de la police sur écran petit */
-    padding: 5px 7px; /* Ajuster l'espacement intérieur */
-    align-items: flex-start; /* Aligner le texte en haut */
-    flex-direction: row;
-    align-content: center;
-    width: 71%;
-  }
-  .button-group .button {
-    font-size: 14px;
-  }
-  .label-button {
-    padding-left: 6px;
-    color: black;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .button .fa-solid {
-    font-size: 14px;
-    /*color: var(--main-color);*/
-  }
   .hebergements-cards .card {
     height: 214px;
     width: 165px;
@@ -734,67 +750,96 @@ footer h3 {
     border-radius: 20px 20px 0 0;
   }
 }
-@media (max-width: 1034px) {
-  .button-group {
-    width: 70%;
-  }
-  .label-button {
-    padding-left: 6px;
-    color: black;
-    font-weight: bold;
-    font-size: 13px;
-  }
-  .button.fa-solid {
-    font-size: 14px;
-    color: var(--main-color);
-  }
+
+@media (max-width: 1050px) {
   .hebergements-cards .card {
     height: 214px;
-    width: 166px;
+    width: 153px;
   }
   .hebergements-cards img {
-    width: 166px;
+    width: 153px;
     height: 50%;
     border-radius: 20px 20px 0 0;
+  }
+}
+
+@media (max-width: 1034px) {
+  .hebergements-cards .card {
+    height: 214px;
+    width: 160px;
+  }
+  .hebergements-cards img {
+    width: 160px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+@media (max-width: 1033px) {
+  .hebergements-cards .card {
+    height: 195px;
+    width: 160px;
+  }
+  .hebergements-cards img {
+    width: 160px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+/************************************/
+/********* ACTIVITE ****************/
+/************************************/
+@media (max-width: 1330px) {
+  .Activites img {
+    width: 255px;
   }
 }
 
 @media (max-width: 1294px) {
   .Activites img {
-    width: 270px;
+    width: 260px;
   }
 }
-
 @media (max-width: 1200px) {
   .Activites img {
     width: 250px;
   }
   .Activites-cards .card-txt {
-    margin-left: 18px;
+    margin-left: 17px;
   }
 }
-@media (max-width: 1120px) {
+@media (max-width: 1140px) {
   .Activites img {
-    width: 230px;
+    width: 240px;
   }
   .Activites-cards .card-txt {
     margin-left: 15px;
   }
 }
+@media (max-width: 1099px) {
+  .Activites img {
+    width: 230px;
+  }
+  .Activites-cards .card-txt {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .Activites img {
+    width: 215px;
+  }
+  .Activites-cards .card-txt {
+    margin-left: 18px;
+  }
+}
+
 @media (max-width: 1028px) {
   .Activites img {
     width: 225px;
   }
   .Activites-cards .card-txt {
     margin-left: 12px;
-  }
-  .hebergements-cards .card {
-    height: 195px;
-    width: 165px;
-  }
-  .hebergements-cards img {
-    width: 165px;
-    height: 50%;
-    border-radius: 20px 20px 0 0;
   }
 }
