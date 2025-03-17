@@ -383,7 +383,7 @@ a {
   padding-left: 0px;
 }
 
-.Plus-info {
+.plus-info {
   padding-left: 10px;
   padding-top: 25px;
 }
@@ -510,14 +510,14 @@ footer ul {
   row-gap: 12px;
 }
 
-.PiedPage-cards {
+.footer-cards {
   display: flex;
   width: 100%;
   margin-top: 33px;
   background-color: #f2f2f2;
 }
 
-.PiedPage-card {
+.footer-card {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
