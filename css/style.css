@@ -23,7 +23,7 @@ ul li {
   margin-left: 17px;
 }
 ul li a:hover {
-  border-top: 2px #0065fc solid;
+  border-top: 3px #0065fc solid;
   color: #0065fc;
   cursor: pointer;
   padding-top: 6px;
@@ -205,8 +205,15 @@ input::placeholder {
 }
 
 .button-group p {
-  pointer-events: none; /*Ignorer les événements de pointeur pour les balises > */
+  /*pointer-events: none; Ignorer les événements de pointeur pour les balises > */
   font-size: 16px;
+}
+
+.button-group p:hover {
+  pointer-events: none; /*Ignorer les événements de pointeur pour les balises > */
+  /*pointer-events: wait ; */
+  background-color: #95c1f0;  /* Couleur au survol */
+  color: black ;
 }
 
 .label-button {
@@ -245,6 +252,11 @@ a {
   text-decoration: none;
 }
 
+.link-color{
+  color: black;
+  text-decoration: none;
+}
+
 .section-title {
   margin: 0;
   font-size: 22px;
@@ -266,6 +278,7 @@ a {
 .card-title {
   font-size: 15px;
 }
+
 
 .euro {
   font-weight: 700;
@@ -422,6 +435,11 @@ a {
   margin-bottom: 30px;
 }
 
+.populaires-cards .card-title:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+
 .populaires-cards img {
   width: 33%;
   height: 136px;
@@ -456,14 +474,14 @@ a {
 }
 
 /*** Activité Marseille ***/
-.Activites {
+.activites {
   display: flex;
   margin-top: 26px;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.Activites-title {
+.activites-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -472,7 +490,7 @@ a {
   padding-left: 24px;
 }
 
-.Activites-cards {
+.activites-cards {
   display: flex;
   /* margin-top: 33px; */
   width: 100%;
@@ -481,16 +499,21 @@ a {
   justify-content: space-evenly;
 }
 
-.Activites-cards .card {
+.activites-cards .card {
   height: 490px;
   padding: 0px;
 }
 
-.Activites-cards .card-txt {
+.activites-cards a:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+
+.activites-cards .card-txt {
   margin-left: 20px;
 }
 
-.Activites img {
+.activites img {
   width: 295px;
   height: 435px;
   border-top-left-radius: 20px;
@@ -986,53 +1009,43 @@ footer h3 {
 /********* ACTIVITE ****************/
 /************************************/
 @media (max-width: 1330px) {
-  .Activites img {
+  .activites img {
     width: 255px;
   }
 }
 
 @media (max-width: 1294px) {
-  .Activites img {
+  .activites img {
     width: 260px;
   }
 }
 @media (max-width: 1200px) {
-  .Activites img {
+  .activites img {
     width: 250px;
   }
-  .Activites-cards .card-txt {
+  .activites-cards .card-txt {
     margin-left: 17px;
   }
 }
 @media (max-width: 1140px) {
-  .Activites img {
+  .activites img {
     width: 240px;
   }
-  .Activites-cards .card-txt {
+  .activites-cards .card-txt {
     margin-left: 15px;
   }
 }
 @media (max-width: 1099px) {
-  .Activites img {
+  .activites img {
     width: 230px;
   }
   .Activites-cards .card-txt {
-<<<<<<< HEAD
-    margin-left: 18px;
-=======
     margin-left: 16px;
 >>>>>>> 2f760fe (Mise A Jour Booki)
   }
 }
-
 @media (max-width: 1060px) {
   .Activites img {
-<<<<<<< HEAD
-    width: 215px;
-  }
-  .Activites-cards .card-txt {
-    margin-left: 18px;
-=======
     width: 223px;
   }
   .card-txt {
@@ -1040,12 +1053,11 @@ footer h3 {
 >>>>>>> 2f760fe (Mise A Jour Booki)
   }
 }
-
 @media (max-width: 1028px) {
-  .Activites img {
+  .activites img {
     width: 225px;
   }
-  .Activites-cards .card-txt {
+  .activites-cards .card-txt {
     margin-left: 12px;
   }
 }

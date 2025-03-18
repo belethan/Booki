@@ -28,13 +28,13 @@ L’entreprise souhaite développer un site Internet qui permette aux usagers de
 - Positionnement de la recherche ajustement image et taille
 - gestion dynamique des boutons filtres
 
-### Gestion des appartements Marseille
+### Gestion des appartements à Marseille
 
 - création des Flexbox
 - Ajustement des écarts entre les items
 - Gestion des images option cover
 
-### Gestion activité Marseille
+### Gestion activité à Marseille
 
 - Création des blocs et Flex
 - Gestion des images tailles/positionnement
