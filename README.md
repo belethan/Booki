@@ -7,6 +7,7 @@ L’entreprise souhaite développer un site Internet qui permette aux usagers de
 
 > [!IMPORTANT]
 > La page n'est pas en mode responsive
+> La présentation telle que définie dans la maquette demeure identique entre 1440px et 1024px.
 
 > [!TIP]
 > Vérification de la page et CSS
@@ -19,29 +20,29 @@ L’entreprise souhaite développer un site Internet qui permette aux usagers de
 
 ### Menu
 
-- redimmensionnement du logo **_BOOKI_**
-- postionnement des options du menu en haut à droite
+- Redimensionnement du logo **_BOOKI_**
+- Postionnement des options du menu en haut à droite
 - Ajustement des marges par rapport à la page et au titre
 
 ### Filtrage des hébergements
 
 - Positionnement de la recherche ajustement image et taille
-- gestion dynamique des boutons filtres
+- Gestion dynamique des boutons filtres
 
 ### Gestion des appartements à Marseille
 
-- création des Flexbox
+- Création des Flexbox
 - Ajustement des écarts entre les items
 - Gestion des images option cover
 
-### Gestion activité à Marseille
+### Gestion des activités à Marseille
 
 - Création des blocs et Flex
-- Gestion des images tailles/positionnement
+- Gestion des images tailles/positionnements
 - Gestion des cadres arrondis
 - Gestion des libellés
 
 ### Gestion Pied de Page (Footer)
 
-- Gestion de 3 groupes
-- Mise en Forme Balse UL et LI
+- Gestion des 3 groupes
+- Mise en Forme des Balises UL et LI

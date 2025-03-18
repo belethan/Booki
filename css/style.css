@@ -925,7 +925,7 @@ footer h3 {
 }
 @media (max-width: 1160px) {
   .hebergements-cards .card {
-    height: 214px;
+    height: 200px;
     width: 180px;
   }
   .hebergements-cards img {
@@ -949,7 +949,7 @@ footer h3 {
 
 @media (max-width: 1090px) {
   .hebergements-cards .card {
-    height: 214px;
+    height: 200px;
     width: 168px;
   }
   .hebergements-cards img {
@@ -1050,7 +1050,6 @@ footer h3 {
   }
   .card-txt {
     margin-left: 16px;
->>>>>>> 2f760fe (Mise A Jour Booki)
   }
 }
 @media (max-width: 1028px) {
@@ -1058,6 +1057,6 @@ footer h3 {
     width: 225px;
   }
   .activites-cards .card-txt {
-    margin-left: 12px;
+    margin-left: 5px;
   }
 }
